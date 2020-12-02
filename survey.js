@@ -28,7 +28,9 @@ rl.question('Which sport is your absolute favourite? ', (answer) => {
 rl.question('What is your superpower? Or, in a few words, tell us what you are amazing at! ', (answer) => {
   console.log(`Thank you for your valuable feedback: ${answer}`);
   userAnswers['talent'] = answer;
+
 rl.close();
+
 console.log(`Here\'s your profile: ${userAnswers['name']} likes ${userAnswers['hobby']} and while doing that often listens to ${userAnswers['music']}!
 ${userAnswers['name']} most enjoys ${userAnswers['food']} for ${userAnswers['meal']} while catching up on the latest ${userAnswers['sport']} news.
 If ${userAnswers['name']} had a superpower it would be ${userAnswers['talent']}!`);
